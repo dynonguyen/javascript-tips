@@ -19,7 +19,7 @@
 - [Object](#object)
 - [Destructuring](#destructuring)
 - [Operator](#operator)
-- [Compairsion](#compairsion)
+- [Comparison](#comparison)
 - [Others](#others)
 
 <!-- Tips for array -->
@@ -497,7 +497,7 @@ const n = 1_000_000_000; // same: n = 1000000000;
 
 </details>
 
-# Compairsion
+# Comparison
 
 <details>
   <summary>
