@@ -5,6 +5,18 @@
   <img  src="images/logo.jpeg" height="200" width="450" />
 </div>
 
+<!-- table of content -->
+
+# TABLE OF CONTENT
+
+- [Array](#array-1)
+- [Object](#object-1)
+- [Operator](#operator-1)
+- [Compairsion](#compairsion-1)
+- [Function](#function-1)
+- [Math](#math-1)
+- [Others](#others-1)
+
 <!-- Tips for array -->
 
 # Array
@@ -45,14 +57,18 @@
 - Create an array containing `1...n`
 
   ```js
-  var arr = Array.from({ length: 4 }, (_, i) => i + 1);
-  var arr2 = Array.from({ length: 4 }, (_, i) => i * 2);
-  var arr3 = Array.from({ length: 4 }, () => Math.random());
+  var arr = [];
+  for (let i = 0; arr.push(++i) < 4; );
+
+  var arr2 = Array.from({ length: 4 }, (_, i) => i + 1);
+  var arr3 = Array.from({ length: 4 }, (_, i) => i * 2);
+  var arr4 = Array.from({ length: 4 }, () => Math.random());
 
   /* 
-    result: arr = [1, 2, 3, 4]
-            arr2 = [0, 2, 4, 6]
-            arr3 = [0.211, 0.5123, 0.612, 0.8921]
+    result: arr =  [1, 2, 3, 4]
+            arr2 = [1, 2, 3, 4]
+            arr3 = [0, 2, 4, 6]
+            arr4 = [0.211, 0.5123, 0.612, 0.8921]
   */
   ```
 
@@ -119,3 +135,74 @@ arr2.length = 0;
 ```
 
 </details>
+
+<details open="open">
+  <summary>
+    6. Random an Item in Array
+  </summary>
+
+```js
+var arr = [2, 4, 5];
+var item = arr[Math.floor(Math.random() * arr.length)];
+```
+
+</details>
+
+<details open="open">
+  <summary>
+    7. Remove an Item from Array
+  </summary>
+
+```js
+var arr = [1, 2, 3];
+
+// Not Recommended
+delete arr[1]; // arr = [1, undefined, 3], length = 3
+
+// Recommended
+arr.splice(1, 1); // arr = [1, 3], length = 2
+```
+
+</details>
+
+<br/>
+
+# Object
+
+<details open="open">
+  <summary>
+    1. Dynamic Property Name
+  </summary>
+
+```js
+const dynamic = 'age',
+	dynamicValue = 18;
+
+var obj = {
+	name: 'Dyno',
+	[dynamic]: dynamicValue,
+};
+
+// result: obj = { name: 'Dyno', age: 18 }
+```
+
+</details>
+<br/>
+
+# Operator
+
+<br/>
+
+# Compairsion
+
+<br/>
+
+# Function
+
+<br/>
+
+# Math
+
+<br/>
+
+# Others
