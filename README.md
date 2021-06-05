@@ -517,11 +517,11 @@ const n = 1_000_000_000; // same: n = 1000000000;
   0 == false // true
   0 === false // false
 
-  '' == false // false
-  '' === false // true
+  '' == false // true
+  '' === false // false
 
-  [] == 0 // false
-  [] === 0 // true
+  [] == 0 // true
+  [] === 0 // false
 
 ```
 
