@@ -716,7 +716,7 @@ var filteredArr = arr.filter(Boolean);
 ```js
 const name = 'Dyno';
 const hello1 = 'Hello ' + name + ', how are you?';
-const hello2 = `Hello ${name}, how are you?`; // template string
+const hello2 = `Hello ${name}, how are you?`; // template string.
 ```
 
 </details>
@@ -735,6 +735,21 @@ console.log(typeof num); // "number"
 
 num = num.toFixed(2); // num = "25.04"
 console.log(typeof num); // ❗ "string"
+```
+
+</details>
+	
+<details>
+  <summary>
+    8. Check variable - convert a variable to Boolean (!! operator)
+  </summary>
+
+  <br/>
+
+```js
+console.log(!!null); // false
+console.log(!!undefined); // false
+console.log(!!1); // true
 ```
 
 </details>
